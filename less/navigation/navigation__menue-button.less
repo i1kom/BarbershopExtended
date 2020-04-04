@@ -1,0 +1,33 @@
+.navigation__menue-button{
+	width:70px;
+	height:100%;
+	position:absolute;
+	right:0px;
+	background-color:@color-brown-dark;
+	border:0;
+}
+.navigation__menue-button::after{
+	position:absolute;
+	display:block;
+	left:17px;
+	top:15px;
+	width:36px;
+	height:2px;
+	z-index:3;
+	content:"";
+	background-color:white;
+}
+.navigation__menue-button::before{
+	position:absolute;
+	display:block;
+	left:17px;
+	top:23px;
+	width:36px;
+	height:10px;
+	box-sizing:border-box;
+	border-top:2px solid white;
+	border-bottom:2px solid white;
+	z-index:3;
+	content:"";
+	background-color:transparent;
+}

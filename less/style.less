@@ -1,4 +1,27 @@
-@max-width = 460px;
-body, html {
-	width:@max-width;
+/*Шрифты*/
+@font-face{
+	font-family:PTSans;
+	src:url(../fonts/ptsansnarrowbold.woff2),
+	url(../fonts/ptsansnarrowbold.woff);
+}
+
+/*Переменные*/
+@color-brown: #826550;
+@color-brown-dark: #6a4d38;
+@font-PTSans-NurrowBold:PTSans, sans-serif;
+
+/*Импорт блоков*/
+@import url(less/visually-hidden/visually-hidden.less);
+@import url(less/main-header-logo/main-header-logo.less);
+@import url(less/navigation/navigation.less);
+@import url(less/navigation/navigation__current-page-title.less);
+@import url(less/navigation/navigation__menue-button.less);
+@max-width: 460px;
+@red: red;
+body {
+	margin:0;
+	padding:0;
+	width:100%;
+	background-color:black;
+	color:white;
 }
