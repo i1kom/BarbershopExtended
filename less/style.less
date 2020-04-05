@@ -1,23 +1,39 @@
 /*Шрифты*/
 @font-face{
-	font-family:PTSans;
+	font-family:PTSans NurrowBold;
 	src:url(../fonts/ptsansnarrowbold.woff2),
 	url(../fonts/ptsansnarrowbold.woff);
+}
+@font-face{
+	font-family:PTSans;
+	src:url(../fonts/ptsansnarrow.woff2),
+	url(../fonts/ptsansnarrow.woff);
 }
 
 /*Переменные*/
 @color-brown: #826550;
 @color-brown-dark: #6a4d38;
-@font-PTSans-NurrowBold:PTSans, sans-serif;
+@font-PTSans-NurrowBold:PTSans NurrowBold, sans-serif;
+@font-PTSans:PTSans, sans-serif;
 
 /*Импорт блоков*/
 @import url(less/visually-hidden/visually-hidden.less);
 @import url(less/main-header-logo/main-header-logo.less);
-@import url(less/navigation/navigation.less);
-@import url(less/navigation/navigation__current-page-title.less);
-@import url(less/navigation/navigation__menue-button.less);
-@max-width: 460px;
-@red: red;
+@import url(less/main-navigation/main-navigation.less);
+@import url(less/main-navigation/main-navigation__current-page-title.less);
+@import url(less/main-navigation/main-navigation__menue-button.less);
+@import url(less/main-navigation/main-navigation__menue-button_open.less);
+@import url(less/main-navigation/main-navigation__menue-button_close.less);
+@import url(less/main-navigation/main-navigation__lists-wrapper.less);
+@import url(less/main-navigation/main-navigation__lists-wrapper_closed.less);
+@import url(less/main-navigation/main-navigation__lists-wrapper_no-js.less);
+@import url(less/main-navigation-shadow/main-navigation-shadow.less);
+@import url(less/site-navigation/site-navigation.less);
+@import url(less/site-navigation/site-navigation__link.less);
+@import url(less/user-navigation/user-navigation.less);
+@import url(less/user-navigation/user-navigation__link.less);
+
+
 body {
 	margin:0;
 	padding:0;

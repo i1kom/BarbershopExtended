@@ -1,0 +1,27 @@
+.user-navigation__link{
+	position:relative;
+	width:100%;
+	margin:0;
+	padding:0;
+	padding-left:45px;
+	padding-top:15px;
+	color:white;
+	text-decoration:none;
+	font-family:@font-PTSans;
+	font-size:18px;
+	line-height:24px;
+	list-style-type:none;
+}
+.user-navigation__link::before{
+	position:absolute;
+	top:18px;
+	left:20px;
+	z-index:5;
+	width:17px;
+	height:17px;
+	background-image:url(../images/login.svg);	
+	background-position:center;
+	background-repeat:no-repeat;
+	content:"";
+	opacity: 0.3;
+}
