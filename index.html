@@ -63,12 +63,33 @@
 			</span>
 		</section>
 		
+		<section class="main-advantages">
+			<div class="main-advantages__slide-wrapper">
+				<h3 class="section-title main-advantages__title">Быстро</h3>
+				<p align="center" class="section-description main-advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
+			</div>
+			<div class="main-advantages__slide-wrapper-2 visually-hidden">
+				<h3 class="section-title main-advantages__title">Круто</h3>
+				<p align="center" class="section-description main-advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино. Во всяком случае внешне.</p>
+			</div>
+			<div class="main-advantages__slide-wrapper-3 visually-hidden">
+				<h3 class="section-title main-advantages__title">Дорого</h3>
+				<p align="center" class="section-description main-advantages__description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+			</div>
+			<div class="slider-buttons">
+				<button class="slider-buttons__button slider-buttons__button_active advantages-slider-button1-js"><span class="visually-hidden">Слайд 1</span></button>
+				<button class="slider-buttons__button advantages-slider-button2-js"><span class="visually-hidden">Слайд 2</span></button>
+				<button class="slider-buttons__button advantages-slider-button3-js"><span class="visually-hidden">Слайд 3</span></button>
+			</div>
+		</section>
+		
 	</body>
 	
 	<script>
 		var mainMenuOpen = document.querySelector(".main-navigation__menue-button_open");
 		var mainMenuClose = document.querySelector(".main-navigation__menue-button_close");
 		var mainMenu = document.querySelector(".main-navigation__lists-wrapper");
+		
 		mainMenu.classList.remove("main-navigation__lists-wrapper_no-js");
 		
 		mainMenuOpen.addEventListener("click", function(evt){
