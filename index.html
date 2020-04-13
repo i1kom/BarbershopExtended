@@ -35,7 +35,7 @@
 					<ul class="user-navigation">
 						<a href="6" class="user-navigation__link"><li>Вход</li></a>
 					</ul>
-					<div class="main-navigation-shadow"></div>
+					<div class="main-navigation__shadow"></div>
 				</div>
 			</nav>
 		</header>
@@ -68,11 +68,11 @@
 				<h3 class="section-title main-advantages__title">Быстро</h3>
 				<p align="center" class="section-description main-advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
 			</div>
-			<div class="main-advantages__slide-wrapper-2 visually-hidden">
+			<div class="main-advantages__slide-wrapper main-advantages__slide-wrapper_second main-advantages__slide-wrapper_hidded">
 				<h3 class="section-title main-advantages__title">Круто</h3>
 				<p align="center" class="section-description main-advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино. Во всяком случае внешне.</p>
 			</div>
-			<div class="main-advantages__slide-wrapper-3 visually-hidden">
+			<div class="main-advantages__slide-wrapper main-advantages__slide-wrapper_third main-advantages__slide-wrapper_hidded">
 				<h3 class="section-title main-advantages__title">Дорого</h3>
 				<p align="center" class="section-description main-advantages__description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
 			</div>
@@ -86,20 +86,61 @@
 	</body>
 	
 	<script>
+		//Элементы главного меню
 		var mainMenuOpen = document.querySelector(".main-navigation__menue-button_open");
 		var mainMenuClose = document.querySelector(".main-navigation__menue-button_close");
 		var mainMenu = document.querySelector(".main-navigation__lists-wrapper");
+		//Элементы слайдера преимуществ
+		var advantageBtn1 = document.querySelector(".advantages-slider-button1-js");
+		var advantageBtn2 = document.querySelector(".advantages-slider-button2-js");
+		var advantageBtn3 = document.querySelector(".advantages-slider-button3-js");
+		var advantageSlide1 = document.querySelector(".main-advantages__slide-wrapper");
+		var advantageSlide2 = document.querySelector(".main-advantages__slide-wrapper_second");
+		var advantageSlide3 = document.querySelector(".main-advantages__slide-wrapper_third");
+		
 		
 		mainMenu.classList.remove("main-navigation__lists-wrapper_no-js");
 		
+		//Работа главного меню
 		mainMenuOpen.addEventListener("click", function(evt){
-		mainMenuClose.classList.remove("visually-hidden");
-		mainMenu.classList.remove("main-navigation__lists-wrapper_closed");
+			mainMenuClose.classList.remove("visually-hidden");
+			mainMenu.classList.remove("main-navigation__lists-wrapper_closed");
+		});
+		mainMenuClose.addEventListener("click", function(evt){
+			mainMenuClose.classList.add("visually-hidden");
+			mainMenu.classList.add("main-navigation__lists-wrapper_closed");
 		});
 		
-		mainMenuClose.addEventListener("click", function(evt){
-		mainMenuClose.classList.add("visually-hidden");
-		mainMenu.classList.add("main-navigation__lists-wrapper_closed");
+		//Работа слайдера преимуществ
+		advantageBtn1.addEventListener("click", function(evt){
+			if (advantageSlide1.classList.contains("main-advantages__slide-wrapper_hidded")){
+				advantageSlide1.classList.remove("main-advantages__slide-wrapper_hidded");
+				advantageSlide2.classList.add("main-advantages__slide-wrapper_hidded");
+				advantageSlide3.classList.add("main-advantages__slide-wrapper_hidded");
+				advantageBtn1.classList.add("slider-buttons__button_active");
+				advantageBtn2.classList.remove("slider-buttons__button_active");
+				advantageBtn3.classList.remove("slider-buttons__button_active");
+			}
+		});
+		advantageBtn2.addEventListener("click", function(evt){
+			if (advantageSlide2.classList.contains("main-advantages__slide-wrapper_hidded")){
+				advantageSlide1.classList.add("main-advantages__slide-wrapper_hidded");
+				advantageSlide2.classList.remove("main-advantages__slide-wrapper_hidded");
+				advantageSlide3.classList.add("main-advantages__slide-wrapper_hidded");
+				advantageBtn1.classList.remove("slider-buttons__button_active");
+				advantageBtn2.classList.add("slider-buttons__button_active");
+				advantageBtn3.classList.remove("slider-buttons__button_active");
+			}
+		});
+		advantageBtn3.addEventListener("click", function(evt){
+			if (advantageSlide3.classList.contains("main-advantages__slide-wrapper_hidded")){
+				advantageSlide1.classList.add("main-advantages__slide-wrapper_hidded");
+				advantageSlide2.classList.add("main-advantages__slide-wrapper_hidded");
+				advantageSlide3.classList.remove("main-advantages__slide-wrapper_hidded");
+				advantageBtn1.classList.remove("slider-buttons__button_active");
+				advantageBtn2.classList.remove("slider-buttons__button_active");
+				advantageBtn3.classList.add("slider-buttons__button_active");
+			}
 		});
 	</script>
 	
