@@ -1,12 +1,23 @@
 .main-advantages{
+	position:relative;
 	width:100%;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
 }
+.main-advantages::after{
+	position:absolute;
+	top:100%;
+	content:"";
+	border:49vw solid transparent;
+	border-top:35px solid #242424;
+}
 @media (min-width:768px){
 	.main-advantages{
 		align-items:center;
+	}
+	.main-advantages::after{
+	border-top:40px solid #242424;
 	}
 }
 @media (min-width:1200px){
@@ -14,5 +25,8 @@
 		flex-direction:row;
 		justify-content:center;
 		align-items:flex-start;
+	}
+	.main-advantages::after{
+	border-top:65px solid #242424;
 	}
 }

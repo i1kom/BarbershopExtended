@@ -1,0 +1,21 @@
+.main-news__date-block{
+	min-width:50px;
+	height:50px;
+	margin-right:25px;
+	display:flex;
+	position:relative;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	font-size:16px;
+	line-height:16px;
+	font-family:@font-PTSans-NurrowBold;
+	background-color:#000000;
+}
+.main-news__date-block::before{
+	position:absolute;
+	top:50px;
+	border: 25px solid transparent; 
+	border-top: 10px solid #000000;
+	content:"";
+}
