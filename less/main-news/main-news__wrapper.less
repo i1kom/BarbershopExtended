@@ -7,3 +7,17 @@
 	justify-content:center;
 	border-bottom:1px solid #e5ddd5;
 }
+.main-news__wrapper:nth-child(3){
+	display:none;
+}
+@media (min-width:768px){
+	.main-news__wrapper{
+		max-width:290px;
+		order:3;
+	}
+}
+@media (min-width:1200px){
+	.main-news__wrapper:nth-child(3){
+	display:flex;
+	}
+}
