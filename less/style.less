@@ -14,10 +14,15 @@
 @color-brown: #826550;
 @color-brown-dark: #6a4d38;
 @color-sand: #f8f5f2;
+@color-coffe: #e5ddd5;
 @font-PTSans-NurrowBold:PTSans NurrowBold, sans-serif;
 @font-PTSans:PTSans, sans-serif;
 
 /*Импорт блоков*/
+/*ЭЛЕМЕНТЫ СЛАЙДЕРОВ*/
+@import url(less/slider-buttons/slider-buttons.less);
+@import url(less/slider-buttons/slider-buttons__button.less);
+@import url(less/slider-buttons/slider-buttons__button_active.less);
 /*HEADER*/
 @import url(less/visually-hidden/visually-hidden.less);
 @import url(less/main-header/main-header.less);
@@ -58,9 +63,7 @@
 @import url(less/main-advantages/main-advantages__slide-wrapper_hidded.less);
 @import url(less/main-advantages/main-advantages__description.less);
 @import url(less/main-advantages/main-advantages__title.less);
-@import url(less/slider-buttons/slider-buttons.less);
-@import url(less/slider-buttons/slider-buttons__button.less);
-@import url(less/slider-buttons/slider-buttons__button_active.less);
+@import url(less/main-advantages/main-advantages__slider-buttons_hidded.less);
 /*НОВОСТИ*/
 @import url(less/main-news/main-news.less);
 @import url(less/main-news/main-news__container.less);
@@ -78,7 +81,13 @@
 @import url(less/main-comments/main_comments__user-name.less);
 @import url(less/main-comments/main-comment__text.less);
 @import url(less/main-comments/main-comments__button_active.less);
-main-comments__button_active
+@import url(less/main-comments/main-comments__container.less);
+@import url(less/main-comments/main-comments__leave-comment-button.less);
+@import url(less/main-comments/main-comments__side-slider-button.less);
+@import url(less/main-comments/main-comments__side-slider-button_right.less);
+@import url(less/main-comments/main-comments__slide-content.less);
+@import url(less/main-comments/main-comments__slider-buttons-group.less);
+
 
 body {
 	margin:0;

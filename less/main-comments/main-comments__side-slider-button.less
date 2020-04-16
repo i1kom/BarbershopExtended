@@ -1,0 +1,26 @@
+.main-comments__side-slider-button{
+	position:relative;
+	width:50px;
+	padding:0;
+	box-sizing:border-box;
+	background:transparent;
+	border:1px solid @color-coffe;
+}
+.main-comments__side-slider-button::before{
+	position:absolute;
+	top:calc(50% - 3px);
+	left:19px;
+	content:"";
+	border:6px solid transparent;
+	border-right:12px solid black;
+	border-left:none;
+}
+.main-comments__side-slider-button:last-child::before{
+	border-left:12px solid black;
+	border-right:none;
+}
+@media (max-width:767px){
+	.main-comments__side-slider-button{
+		display:none;
+	}
+}

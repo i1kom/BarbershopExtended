@@ -1,11 +1,23 @@
 .main-comments__slide-wrapper{
 	width:100%;
 	height:auto;
+	max-height:165px;
 	margin:0;
 	margin-bottom:20px;
 	padding:0;
 	box-sizing:border-box;
 	display:flex;
 	align-items:flex-start;
-	justify-content:space-between;
+	justify-content:center;
+}
+@media (min-width:768px){
+	.main-comments__slide-wrapper{
+		margin-bottom:70px;
+		align-items:stretch;
+	}
+}
+@media (min-width:1200px){
+	.main-comments__slide-wrapper{
+		margin-bottom:30px;
+	}
 }

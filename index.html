@@ -76,7 +76,7 @@
 				<h3 class="section-title main-advantages__title">Дорого</h3>
 				<p align="center" class="section-description main-advantages__description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
 			</div>
-			<div class="slider-buttons">
+			<div class="slider-buttons main-advantages__slider-buttons_hidded">
 				<button class="slider-buttons__button slider-buttons__button_active advantages-slider-button1-js"><span class="visually-hidden">Слайд 1</span></button>
 				<button class="slider-buttons__button advantages-slider-button2-js"><span class="visually-hidden">Слайд 2</span></button>
 				<button class="slider-buttons__button advantages-slider-button3-js"><span class="visually-hidden">Слайд 3</span></button>
@@ -103,15 +103,26 @@
 		</section>
 		
 		<section class="main-comments">
-			<h3 class="section-title main-comments__title">Отзывы о нас</h3>
-			<div class="main-comments__slide-wrapper">
-				<img src="images/avatar1.jpg">
-				<p align="left" class="section-description main-comment__text"><b class="main_comments__user-name">Трэвис Беркер</b><br>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
-			</div>
-			<div class="slider-buttons">
-				<button class="slider-buttons__button main-comments__button_active advantages-slider-button1-js"><span class="visually-hidden">Слайд 1</span></button>
-				<button class="slider-buttons__button advantages-slider-button2-js"><span class="visually-hidden">Слайд 2</span></button>
-				<button class="slider-buttons__button advantages-slider-button3-js"><span class="visually-hidden">Слайд 3</span></button>
+			<div class="main-comments__container">
+				<h3 class="section-title main-comments__title">Отзывы о нас</h3>
+				<a class="general-link main-comments__leave-comment-button" href="1">Оставить свой</a>				
+				<div class="main-comments__slide-wrapper">
+					<button class="main-comments__side-slider-button"><span class="visually-hidden">Предыдущий слайд</span></button>
+					<div class="main-comments__slide-content">
+						<picture>
+							<source srcset="images/avatar3.jpg" media="(min-width:1200px)">
+							<source srcset="images/avatar2.jpg" media="(min-width:768px)">
+							<img src="images/avatar1.jpg">
+						</picture>
+						<p align="left" class="section-description main-comment__text"><b class="main_comments__user-name">Трэвис Беркер</b><br>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+					</div>
+					<button class="main-comments__side-slider-button main-comments__side-slider-button_right"><span class="visually-hidden">Следующий слайд</span></button>
+				</div>
+				<div class="slider-buttons main-comments__slider-buttons-group">
+					<button class="slider-buttons__button main-comments__button_active advantages-slider-button1-js"><span class="visually-hidden">Слайд 1</span></button>
+					<button class="slider-buttons__button advantages-slider-button2-js"><span class="visually-hidden">Слайд 2</span></button>
+					<button class="slider-buttons__button advantages-slider-button3-js"><span class="visually-hidden">Слайд 3</span></button>
+				</div>
 			</div>
 		</section>
 		
