@@ -3,10 +3,21 @@
 	padding:0px 20px;
 	width:100%;
 	height:auto;
+	position:relative;
 	display:flex;
 	justify-content:center;
 	box-sizing:border-box;
 	background-color:@color-sand;
+}
+@media (max-width:768px){
+	.main-comments::after{
+		position:absolute;
+		top:100%;
+		z-index:5;
+		content:"";
+		border:49vw solid transparent;
+		border-top:35px solid @color-sand;
+	}
 }
 @media (min-width:768px){
 	.main-comments{
