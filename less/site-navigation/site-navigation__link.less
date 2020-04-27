@@ -18,18 +18,35 @@
 	font-size:18px;
 	line-height:24px;
 	text-transform:uppercase;
- }
+	position:relative;
+}
  @media (min-width:768px){
 	.site-navigation__link{
-	width:auto;
-	height:100%;
-	background-color:transparent;
-	border:none;
-	padding:0px 16px;
+		width:auto;
+		height:100%;
+		background-color:transparent;
+		border:none;
+		padding:0px 16px;
+	}
+	.site-navigation__link:hover{
+		background-color:white;
+		color:black;
+	}
+	.site-navigation__link:focus{
+		outline-style:none;	
+	}
+	.site-navigation__link:focus::before{
+		bottom:0px;
+		left:32px;
+		height:3px;
+		width:calc(100% - 64px);
+		position:absolute;
+		content:"";
+		background-color:@color-brown;
 	}
  }
 @media (min-width:1200px){
 	.site-navigation__link{
-	padding:0px 32px;
+		padding:0px 32px;
 	}
 }
